@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070a12">
+<title>TEAM 4K Results Checker — HSC Part-II 2026</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg"></div>
+
+<main class="wrap">
+  <header class="hero">
+    <div class="brand">
+      <div class="logo">4K</div>
+      <div>
+        <div class="eyebrow">TEAM 4K</div>
+        <h1>Results Checker</h1>
+      </div>
+    </div>
+    <p>HSC Part-II • Science Pre-Engineering • Annual Examination 2026</p>
+  </header>
+
+  <section class="card search-card">
+    <div class="search-title">Check Result by Roll Number</div>
+    <div class="search-row">
+      <input id="rollInput" inputmode="numeric" maxlength="6"
+             placeholder="Enter 6-digit roll number" autocomplete="off">
+      <button id="searchBtn" type="button">Check Result</button>
+    </div>
+    <div class="hint">Example: 804713 • Press Enter to search</div>
+  </section>
+
+  <section id="result" class="card result-card hidden"></section>
+  <section id="notice" class="card notice hidden"></section>
+
+  <section class="stats">
+    <div class="stat"><b id="passed">9,922</b><span>Passed</span></div>
+    <div class="stat"><b id="appeared">18,014</b><span>Appeared</span></div>
+    <div class="stat"><b id="passPct">55.08%</b><span>Pass % of Declared Result</span></div>
+  </section>
+
+  <section class="card info">
+    <h2>Grading Formula</h2>
+    <div class="grades">
+      <span><b>A-1</b> 80%+ (880+)</span>
+      <span><b>A</b> 70–79.99% (770–879)</span>
+      <span><b>B</b> 60–69.99% (660–769)</span>
+      <span><b>C</b> 50–59.99% (550–659)</span>
+      <span><b>D</b> 40–49.99% (440–549)</span>
+      <span><b>E</b> 33–39.99% (363–439)</span>
+    </div>
+    <p class="source">
+      Indexed result records: <b id="recordCount">—</b>.
+      Percentage is calculated from the listed grand total. The gazette notes that
+      hardship/grace adjustments may affect grades and that grace marks are not added to the grand total.
+    </p>
+  </section>
+
+  <footer>TEAM 4K • Results Checker • 2026</footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
